@@ -18,30 +18,8 @@ import ArrayUtil from '@/utils/ArrayUtil';
         try {
             const html = self.html;
             const template = `<div class='pug-html padding'>${html}</div>`;
-            const elem = createElement({template,
-                data: () => { vars: {
-                    // empty
-                } },
-                methods: {
-                    gen(key: string, value: any) {
-                        if (this.vars[key] == null) {
-                            this.$set(this.vars, key, value);
-                        }
-                    },
-                    array(key: string, num: number) {
-                        this.gen(key, ArrayUtil.range(num).map(() => null));
-                    },
-                    percent(array: boolean[]): number {
-                        return array.reduce((prev, value) => {
-                            if (value) {
-                                // 一つ分足す
-                                return prev + (1 / array.length) * 100;
-                            }
-
-                            return prev;
-                        }, 0);
-                    },
-                },
+            const elem = createElement({
+                template,
             });
             return elem;
         } catch {
