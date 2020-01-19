@@ -11,6 +11,8 @@ import * as wrap from 'pug-runtime/wrap';
 
 import ArrayUtil from '@/utils/ArrayUtil';
 
+// TODO: 入力過程でUnknown custom elementが出る
+
 @Component({
     render(createElement: CreateElement): VNode {
         const self = this as any;
