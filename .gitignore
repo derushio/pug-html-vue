@@ -4,8 +4,5 @@
 /types
 
 yarn-error.log
-yarn.lock
 
 .env.local
-
-.vscode
