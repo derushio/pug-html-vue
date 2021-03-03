@@ -26,7 +26,7 @@
     "dependencies": {
         "lodash": "^4.17.15",
         "pug": "^2.0.3",
-        "pug-code-gen": "^2.0.2",
+        "pug-code-gen": "^2.0.3",
         "pug-lexer": "^4.1.0",
         "pug-parser": "^5.0.1",
         "pug-runtime": "^2.0.5",
